@@ -5,8 +5,8 @@
 body{
   height:5000px
 }
-.body-div{
-  background-color: rgb(199, 198, 198);
+.body-div-index{
+  background-color: rgb(231, 230, 230);
   height: 98%;
   display: flex;
 }
@@ -31,7 +31,7 @@ body{
   z-index: 1;
 }
 .elements-div{
-  height: 93%; 
+  height:900%; 
   width: 100%; 
   display: flex; 
   justify-content: center; 

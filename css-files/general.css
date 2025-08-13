@@ -36,5 +36,6 @@ body{
   display: flex; 
   justify-content: center; 
   position:absolute; 
-  top: 400px;
+  top: 420px;
+  border-radius: 50%;
 }

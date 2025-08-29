@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css-files/header.css">
+  <link rel="stylesheet" href="./css-files/general.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Deals - 4KIN</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="header-div">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo-image" src="./images/Screenshot 2025-06-19 102348.png" alt="4KIN">
+        </a>
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search ">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+      <div class="nav-links">
+        <a class="nav-link" href="./today's-deals.html">
+          <i class="fas fa-fire"></i>
+          Today's Deals
+        </a>
+        <a class="nav-link" href="./suggestions.html">
+          <i class="fas fa-lightbulb"></i>
+          Suggestions
+        </a>
+        <a class="nav-link" href="./about-us.html">
+          <i class="fas fa-info-circle"></i>
+          About Us
+        </a>
+        <a class="nav-link cart-link" href="./my-cart.html">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+          Cart
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="featured-section" style="padding-top: 2.5rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 1.25rem;">
+        <h2 class="section-title">Today's Deals</h2>
+        <a href="./index.html" class="view-all">Back to Home <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Filters / Sort Bar -->
+      <div style="display:flex; gap: 1rem; align-items:center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap;">
+        <div style="display:flex; gap: .5rem; align-items:center;">
+          <span style="color: var(--gray-700); font-weight:600;">Filter:</span>
+          <button class="btn btn-secondary" style="min-width: auto; padding: .5rem .9rem;">All</button>
+          <button class="btn btn-secondary" style="min-width: auto; padding: .5rem .9rem;">Electronics</button>
+          <button class="btn btn-secondary" style="min-width: auto; padding: .5rem .9rem;">Fashion</button>
+          <button class="btn btn-secondary" style="min-width: auto; padding: .5rem .9rem;">Beauty</button>
+        </div>
+        <div style="display:flex; gap:.5rem; align-items:center;">
+          <span style="color: var(--gray-700); font-weight:600;">Sort by:</span>
+          <select style="padding:.55rem .8rem; border:1px solid var(--gray-300); border-radius: 10px; background: var(--gray-150); color: var(--gray-800);">
+            <option>Best Match</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Top Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Deals Grid -->
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-badge">-25%</div>
+          <div class="product-image">
+            <img src="./images/phone.png" alt="Smartphone">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Smartphone X</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(4.3)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 55,000</span>
+              <span class="original-price">Rs. 73,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-30%</div>
+          <div class="product-image">
+            <img src="./images/shoes.png" alt="Running Shoes">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Running Shoes</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+              <span>(4.1)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 4,500</span>
+              <span class="original-price">Rs. 6,400</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-15%</div>
+          <div class="product-image">
+            <img src="./images/lipstick.png" alt="Lipstick">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Matte Lipstick</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+              <span>(3.5)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 900</span>
+              <span class="original-price">Rs. 1,050</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-35%</div>
+          <div class="product-image">
+            <img src="./images/headphone.png" alt="Headphone">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Over-Ear Headphone</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(4.4)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 3,800</span>
+              <span class="original-price">Rs. 5,900</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-20%</div>
+          <div class="product-image">
+            <img src="./images/headset.jpeg" alt="Gaming Headset">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gaming Headset Pro</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(4.8)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 4,000</span>
+              <span class="original-price">Rs. 5,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple pagination placeholder -->
+      <div style="display:flex; justify-content:center; gap:.5rem; margin-top:1.5rem;">
+        <button class="btn btn-secondary" style="min-width:auto; padding:.5rem .9rem;">Prev</button>
+        <button class="btn btn-secondary" style="min-width:auto; padding:.5rem .9rem;">1</button>
+        <button class="btn btn-secondary" style="min-width:auto; padding:.5rem .9rem;">2</button>
+        <button class="btn btn-secondary" style="min-width:auto; padding:.5rem .9rem;">Next</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

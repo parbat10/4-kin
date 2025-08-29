@@ -5,74 +5,358 @@
   <link rel="stylesheet" href="./css-files/general.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>www.mywebsite.com</title>
+  <title>ShopHub - Your Ultimate Shopping Destination</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Navigation -->
   <nav class="header-div">
-    <a class="container-div" href="./today's-hit-.html">
-      Today's Hits  
-    </a>
-    <a class="container-div" href="./suggestions.html">
-      suggestions
-    </a>
-    <a class="container-div" href="./index.html">  
-      <img class="image-1" src="./images/Screenshot 2025-06-19 102348.png">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo-image" src="./images/Screenshot 2025-06-19 102348.png" alt="ShopHub">
+        </a>
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search ">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+      <div class="nav-links">
+        <a class="nav-link" href="./today's-deals.html">
+          <i class="fas fa-fire"></i>
+          Today's Deals
+        </a>
+        <a class="nav-link" href="./suggestions.html">
+          <i class="fas fa-lightbulb"></i>
+          Suggestions
+        </a>
+        <a class="nav-link" href="./about-us.html">
+          <i class="fas fa-info-circle"></i>
+          About Us
+        </a>
+        <a class="nav-link cart-link" href="./my-cart.html">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+          Cart
+        </a>
+      </div>
     </div>
-    </a>
-    <a class="container-div" href="./about-us.html">
-      about us
-    </a>
-    <a class="container-div" href="./my-cart.html">
-      my cart
-    </a>
-    
   </nav>
-  <div class="body-div-index">
-    <div class="image-div" >
-      <img class="body-image" src="./images/Screenshot 2025-06-24 114851.png">
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to 4KIN</h1>
+      <p class="hero-subtitle">Discover amazing products at unbeatable prices</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Shop Now</button>
+        <button class="btn btn-secondary">Learn More</button>
+      </div>
     </div>
-    <div class="elements-div">
-      <div style="background-color: rgb(209, 185, 185); height: 100%; width: 90%; z-index: 5;">
-        <div style="background-color: rgb(139, 139, 139); height: 20px; border-bottom-width:1px;border-bottom-color:rgb(91, 91, 91); border-bottom-style: solid; color: white;">
-          TODAY'S HOT
+    <div class="hero-image">
+      <img src="./images/Screenshot 2025-06-24 114851.png" alt="Hero Image">
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>Electronics</h3>
+          <p>Latest gadgets and tech</p>
         </div>
-        <div style="height: 100%; background-color: rgb(253, 253, 253); display: flex; padding-top:20px; padding-left:20px; padding-right: 20px; justify-content: top; justify-content: space-between;">
-          <div style="height: 200px; width: 200px; background-color: brown; flex: 1;">
-            <div style="height: 60%;">
-              <img style="height: 100%; width: 100%;" src="./images/headset.jpeg">
-            </div>
-            <div style="height: 20% ;">Headset</div>
-            <div style="height: 10%;">Rs.5000</div>
-            <div style="height: 10%;">offer</div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-tshirt"></i>
           </div>
-          <div style="height: 200px; width: 200px; background-color: brown; flex: 1;">
-            <div style="height: 60%;">
-              <img style="height: 100%; width: 100%;" src="./images/headset.jpeg">
-            </div>
-            <div style="height: 20% ;">Headset</div>
-            <div style="height: 10%;">Rs.5000</div>
-            <div style="height: 10%;">offer</div>
+          <h3>Fashion</h3>
+          <p>Trendy clothing & accessories</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-home"></i>
           </div>
-          <div style="height: 200px; width: 200px; background-color: brown; flex: 1;">
-            <div style="height: 60%;">
-              <img style="height: 100%; width: 100%;" src="./images/headset.jpeg">
-            </div>
-            <div style="height: 20% ;">Headset</div>
-            <div style="height: 10%;">Rs.5000</div>
-            <div style="height: 10%;">offer</div>
+          <h3>Home & Living</h3>
+          <p>Furniture & decor</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-dumbbell"></i>
           </div>
-          <div style="height: 200px; width: 200px; background-color: brown; flex: 1;">
-            <div style="height: 60%;">
-              <img style="height: 100%; width: 100%;" src="./images/headset.jpeg">
-            </div>
-            <div style="height: 20% ;">Headset</div>
-            <div style="height: 10%;">Rs.5000</div>
-            <div style="height: 10%;">offer</div>
-          </div>
-          
+          <h3>Sports</h3>
+          <p>Fitness & outdoor gear</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Today's Hot Deals</h2>
+        <a href="./today's-hit-.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-badge">-20%</div>
+          <div class="product-image">
+            <img src="./images/headset.jpeg" alt="Gaming Headset">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gaming Headset Pro</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.8)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 4,000</span>
+              <span class="original-price">Rs. 5,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-15%</div>
+          <div class="product-image">
+            <img src="./images/headset.jpeg" alt="Wireless Headset">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Wireless Bluetooth Headset</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(4.2)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 3,400</span>
+              <span class="original-price">Rs. 4,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">New</div>
+          <div class="product-image">
+            <img src="./images/headset.jpeg" alt="Premium Headset">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Premium Noise Cancelling</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(4.9)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 6,500</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-30%</div>
+          <div class="product-image">
+            <img src="./images/headset.jpeg" alt="Budget Headset">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Budget Gaming Headset</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 2,100</span>
+              <span class="original-price">Rs. 3,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- New products -->
+        <div class="product-card">
+          <div class="product-badge">Hot</div>
+          <div class="product-image">
+            <img src="./images/phone.png" alt="Smartphone">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Smartphone X</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(4.3)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 55,000</span>
+              <span class="original-price">Rs. 60,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">-10%</div>
+          <div class="product-image">
+            <img src="./images/shoes.png" alt="Running Shoes">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Running Shoes</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+              <span>(4.1)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 4,500</span>
+              <span class="original-price">Rs. 5,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">New</div>
+          <div class="product-image">
+            <img src="./images/lipstick.png" alt="Lipstick">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Matte Lipstick</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+              <span>(3.5)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 900</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">Best</div>
+          <div class="product-image">
+            <img src="./images/headphone.png" alt="Headphone">
+            <div class="product-overlay">
+              <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+              <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Over-Ear Headphone</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(4.4)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">Rs. 3,800</span>
+              <span class="original-price">Rs. 4,200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive deals and updates</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ShopHub</h3>
+          <p>Your ultimate shopping destination for quality products at great prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./today's-hit-.html">Today's Deals</a></li>
+            <li><a href="./suggestions.html">Suggestions</a></li>
+            <li><a href="./my-cart.html">My Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> +977 123-456-789</p>
+          <p><i class="fas fa-envelope"></i> info@4kin.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> birtamode, Nepal</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ShopHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

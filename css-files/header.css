@@ -24,6 +24,8 @@
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid var(--gray-300);
+  height: 92.8px;
+  flex-wrap: wrap;
 }
 
 .nav-container {
@@ -242,4 +244,7 @@
   width: 72px;
   height: 44px;
   border: none;
+}
+.search-element{
+  
 }
